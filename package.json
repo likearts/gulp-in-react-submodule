@@ -15,6 +15,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:prod": "react-scripts build && rm -rf docs && mv build docs",
+    "build:complete": "BUILD_PATH='./dist/sub' react-scripts build",
+    "test": "react-scripts test",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
